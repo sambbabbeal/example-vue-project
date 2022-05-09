@@ -5,12 +5,12 @@
 /*eslint-disable */
 
 export default {
-  name: "FirstComponent",
+  name: 'FirstComponent',
   data() {
     return {
-      arg: "hello",
-    };
-  },
-};
+      arg: 'hello'
+    }
+  }
+}
 /*eslint-disable */
 </script>

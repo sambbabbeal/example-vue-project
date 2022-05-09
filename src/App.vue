@@ -1,13 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <img src="./assets/logo.png" />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <first-component />
+    <about />
+    <todoApp />
+    <router-view />
   </div>
 </template>
 
 <script>
+import FirstComponent from './components/FirstComponent.vue'
+import About from './components/About.vue'
+import todoApp from './components/todoapp.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    FirstComponent,
+    About,
+    todoApp
+  }
 }
 </script>
 
